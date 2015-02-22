@@ -51,7 +51,7 @@ p:fallbackToSystemLocale="false"/>
         <beans:property name="cookieMaxAge" value="3600"></beans:property>
     </beans:bean>
 	
-	<context:component-scan base-package="com.reservation.hotel" />
+	<context:component-scan base-package="com.reservation.rdv" />
 	
 	
 	

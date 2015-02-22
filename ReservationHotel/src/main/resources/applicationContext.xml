@@ -42,13 +42,13 @@
 
 	<context:annotation-config></context:annotation-config>
 
-	<jpa:repositories base-package="com.reservation.hotel.repository"
+	<jpa:repositories base-package="com.reservation.rdv.repository"
 		entity-manager-factory-ref="entityManagerfactory"
 		transaction-manager-ref="transactionManager"></jpa:repositories>
-	<jpa:repositories base-package="com.reservation.hotel.services.jpa"></jpa:repositories>
-	<context:component-scan base-package="com.reservation.hotel.services.jpa" />
+	<jpa:repositories base-package="com.reservation.rdv.services.jpa"></jpa:repositories>
+	<context:component-scan base-package="com.reservation.rdv.services.jpa" />
 	<bean id="userAuthenticationProviderService"
-		class="com.reservation.hotel.services.jpa.UserAuthenticationProviderServiceImpl">
+		class="com.reservation.rdv.services.jpa.UserAuthenticationProviderServiceImpl">
 		<property name="authenticationManager" ref="authenticationManager" />
 	</bean>
 
